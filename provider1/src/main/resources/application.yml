@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: service-provider1
+
+eureka:
+  instance:
+    hostname: localhost # 服务注册中心实例名
+client:
+  serviceUrl: # 端口号为8761的服务注册中心地址
+    defaultZone: http://localhost:8761/eureka/
